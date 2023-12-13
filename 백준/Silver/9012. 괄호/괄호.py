@@ -1,34 +1,24 @@
 import sys
 
-pa = {
-    "{": "}",
-    "(": ")",
-    "[": "]"
-}
-
-
-def ans():
+def solution(strs):
     stack = []
-    ps = sys.stdin.readline().strip()
 
-    for s in ps:
-        if s in ["[", "{", "("]:
-            stack.append(s)
+    for ps in strs:
+        if ps == '(':        # 여는 괄호일 때
+            stack.append(str)
         else:
             if not stack:
-                return "NO"
-            else:
-                if pa[stack.pop()] != s:
-                    return "NO"
+                return 'NO'
+            elif stack:
+                stack.pop()
 
     if stack:
-        return "NO"
+        return 'NO'
     else:
-        return "YES"
+        return 'YES'
 
+N = int(sys.stdin.readline())
 
-T = int(sys.stdin.readline())
-
-for i in range(T):
-
-    print(ans())
+for i in range(N):
+    strs = sys.stdin.readline().strip()
+    print(solution(strs))
