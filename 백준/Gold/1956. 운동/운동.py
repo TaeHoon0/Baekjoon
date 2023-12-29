@@ -23,7 +23,7 @@ for i in range(1, V + 1):
     for j in range(1, V + 1):
         if i == j:
             continue
-        if cities[i][j] != 0 and cities[i][j] != INF and cities[j][i] != 0 and cities[j][i] != INF:
+        if cities[i][j] != INF and cities[j][i] != INF:
             ans = min(ans, cities[i][j] + cities[j][i])
 
 if ans != INF:
