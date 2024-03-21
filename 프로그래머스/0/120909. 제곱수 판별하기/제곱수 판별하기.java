@@ -1,8 +1,7 @@
 class Solution {
     public int solution(int n) {
-        for(int i = 1; i < 1001; i++) {
-            if(Math.pow(i, 2) == n) return 1;
-        }
+        if(Math.sqrt(n) % 1 == 0) return 1;
+
         return 2;
     }
 }
