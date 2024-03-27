@@ -5,7 +5,7 @@ class Solution {
         int answer = 0;
        
         for(String num : nums) {
-            if(num.equals(" ") || num.equals("")) continue;
+            if(num.equals("")) continue;
             int n = Integer.parseInt(num);
             answer += n;
         }
