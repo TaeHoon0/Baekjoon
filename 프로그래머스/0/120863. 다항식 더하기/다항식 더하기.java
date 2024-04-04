@@ -30,7 +30,9 @@ class Solution {
         
         if(var == 1) sb.append("x");
         else if(var != 0) sb.append(Integer.toString(var) + "x");
+        
         if(var != 0 && con != 0) sb.append(" + ");
+        
         if(con != 0) sb.append(Integer.toString(con));
                                               
         return sb.toString();
