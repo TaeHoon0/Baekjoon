@@ -1,0 +1,20 @@
+class Solution {
+    public int solution(int[][] dots) {
+        double gradient1 = (double)(dots[1][0] - dots[0][0]) / (dots[1][1] - dots[0][1]);
+        double gradient2 = (double)(dots[3][0] - dots[2][0]) / (dots[3][1] - dots[2][1]); 
+        
+        double gradient3 = (double)(dots[2][0] - dots[0][0]) / (dots[2][1] - dots[0][1]);
+        double gradient4 = (double)(dots[3][0] - dots[1][0]) / (dots[3][1] - dots[1][1]); 
+        
+        double gradient5 = (double)(dots[3][0] - dots[0][0]) / (dots[3][1] - dots[0][1]);
+        double gradient6 = (double)(dots[2][0] - dots[1][0]) / (dots[2][1] - dots[1][1]); 
+        
+        if(gradient1 == gradient2) return 1;
+        if(gradient3 == gradient4) return 1;
+        if(gradient5 == gradient6) return 1;
+        
+        return 0;
+    }
+}
+
+// 1, 2  3, 4  /  1, 3,   2, 4  /  1, 4,   2, 3
