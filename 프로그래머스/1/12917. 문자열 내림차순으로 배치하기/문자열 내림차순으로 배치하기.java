@@ -6,8 +6,8 @@ class Solution {
         char[] arr = s.toCharArray();
         Arrays.sort(arr);
         
-        for(int i = arr.length - 1; i >= 0; i--) sb.append(arr[i]);
+        for(char c : arr) sb.append(c);
         
-        return sb.toString();
+        return sb.reverse().toString();
     }
 }
