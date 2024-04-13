@@ -10,8 +10,7 @@ class Solution {
             }
         }
         
-        int[] answer = set.stream().mapToInt(Integer::intValue).toArray();
-        Arrays.sort(answer);
+        int[] answer = set.stream().sorted().mapToInt(Integer::intValue).toArray();
         
         return answer;
     }
