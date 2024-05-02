@@ -5,7 +5,6 @@ class Solution {
         String answer = "";
         Map<String, Integer> map = new HashMap<>();
         
-        
         for (String player : participant) map.put(player, map.getOrDefault(player, 0) + 1);
         
         for(String player : completion) {
