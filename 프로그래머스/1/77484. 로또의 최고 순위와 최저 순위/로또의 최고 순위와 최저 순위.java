@@ -8,6 +8,7 @@ class Solution {
         for(int i = 0; i < lottos.length; i++) {
             if(lottos[i] == 0) {
                 zero++;
+                continue;
             } else {
                 for(int j = 0; j < win_nums.length; j++) {
                     if(lottos[i] == win_nums[j]) {
