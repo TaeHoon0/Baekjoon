@@ -6,6 +6,7 @@ class Solution {
         HashMap<Integer, Integer> mapY = new HashMap<>();
         StringBuilder couple = new StringBuilder();
         
+        // 0 ~ 9 초기화
         for(int i = 0; i < 10; i++) {
             mapX.put(i, -1);
             mapY.put(i, -1);
