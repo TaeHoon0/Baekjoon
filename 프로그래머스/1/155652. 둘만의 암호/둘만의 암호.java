@@ -7,7 +7,7 @@ class Solution {
             while(tmp > 0) {
                 c++;
                 if(c > 'z') c = 'a';    // z를 넘어가면 a
-                if(skip.indexOf(c) == -1) tmp--;    // 현재 문자가 skip에 포함되어 있으면 한 번 더
+                if(skip.indexOf(c) == -1) tmp--;    // 현재 문자가 skip에 포함되어 있으면 감소
             }
             sb.append(c);
         } 
