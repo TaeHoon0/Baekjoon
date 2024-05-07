@@ -13,6 +13,7 @@ class Solution {
                     for(int j = 0; j < key.length(); j++) {
                         if(c == key.charAt(j)) {
                             min = Math.min(min, j + 1); // j는 0 , 클릭은 1부터 시작
+                            break;
                         }
                     }
                 }
